@@ -8,13 +8,16 @@ This document summarizes the current electrical system, recent upgrades, usage, 
 
 - **Main Service Amperage:** 200A (confirmed)
 - **Service Voltage:** 120/240V (assumed typical for residential)
-- **Utility Provider:** (Not specified)
-- **Main Panel Location:** (Not specified)
-- **Panel Manufacturer/Model:** (Not specified)
+- **Utility Provider:** PSE&G
+- **Main Panel Location:** Basement, south side
+- **Panel Manufacturer/Model:** Siemens
 - **Year Installed/Upgraded:** 2022 (with 1st floor remodel & new kitchen)
 - **Breaker Capacity:** (Not specified)
-- **Subpanels:** (Not specified)
+- **Subpanels:** None – only one panel
 - **Grounding/Bonding:** (Not specified)
+
+**Breaker Panel Photo:**  
+![Breaker Panel](20250810_214938.jpg)
 
 ---
 
@@ -47,9 +50,6 @@ This document summarizes the current electrical system, recent upgrades, usage, 
     - Home Networking
     - HVAC (Gas Furnace and Trane Air Conditioner)
 - **Kitchen Loads:** New as of 2022 remodel
-- **Other significant loads:** (Not specified)
-- **EV charger:** (Not specified)
-- **Pool/Hot Tub:** (Not specified)
 
 ---
 
@@ -58,7 +58,7 @@ This document summarizes the current electrical system, recent upgrades, usage, 
 - **Smart Meter:** (Not specified)
 - **Surge Protection:** (Not specified)
 - **Known Issues:** (None reported)
-- **Other:** Main breaker is labeled 200A
+- **Other:** Main breaker is labeled 200A. No pool, hot tub, or EV charger at this time.
 
 ---
 
