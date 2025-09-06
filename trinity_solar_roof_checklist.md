@@ -1,6 +1,6 @@
 # Trinity Solar – Roof Compatibility & Coordination Checklist
 
-This checklist is prepared for your upcoming meetings with Trinity Solar. It now includes initial qualification criteria based on their requirements, along with detailed questions for roof and system readiness.
+This checklist is prepared for your upcoming meetings with Trinity Solar. It now includes initial qualification criteria based on their requirements, along with detailed questions for roof and system [...]  
 
 ---
 
@@ -120,7 +120,7 @@ This checklist is prepared for your upcoming meetings with Trinity Solar. It now
 
 - [ ] _________________________________________________
 - [ ] _________________________________________________
-- [ ] _________________________________________________
+- [x] Contacted Mark Levine from Lightning Construction and set up an appointment for Monday night at 6pm.
 
 ---
 
