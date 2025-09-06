@@ -21,11 +21,10 @@ This document contains details about the current roof, planned upgrades, and con
 - **Roof Pitch:** (Not specified)
 - **Snow Load Rating:** Rated for snow (Northern NJ standards)
 - **Warranty:** (Not specified)
-- **Total Roof Square Footage:** 832 sq ft
+- **Total Roof Square Footage:** 752 sq ft
     - North side roof: 343 sq ft
     - South side roof: 294 sq ft
     - Front eave: 60 sq ft
-    - Back mud room: 80 sq ft
     - 2nd floor mud room: 55 sq ft
 - **Notes:** 
 
