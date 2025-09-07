@@ -57,8 +57,8 @@ This document contains details about the current roof, planned upgrades, and con
 
 ## 5. Additional Notes
 
-- _________________________________________________________
-- _________________________________________________________
+- John from Morris Count Roofing siding Wednesday 862-391-1619
+- - _________________________________________________________
 - _________________________________________________________
 
 ---
