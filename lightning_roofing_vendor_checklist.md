@@ -8,7 +8,7 @@ Use this checklist to ensure your new roof is durable, solar-compatible, and tha
 
 - [ ] What roofing materials do you recommend for durability and snow load?  
   - [ ] Standing seam metal (preferred for solar)
-  - [ ] Synthetic/composite (please specify brand/type)
+  - [ ] Synthetic/composite / IKO Dynasty Nortic Perf 
   - [ ] Other: _____________________
 
 - [ ] Is this roof type compatible with solar panel installation?
@@ -62,10 +62,10 @@ Use this checklist to ensure your new roof is durable, solar-compatible, and tha
 
 ## Notes & Special Considerations
 
-- [ ] __________________________________________________
-- [ ] __________________________________________________
+- [ ] Mark Lieven $7860
+- [ ] Included: New gutters, permits, sale tax, disposial
 - [ ] __________________________________________________
 
----
+
 
 **Tip:** Always confirm in writing that adding solar will not void your roof warranty, and that the roofer and solar installer are willing to coordinate on your project.
