@@ -8,11 +8,11 @@ Use this checklist to ensure your new roof is durable, solar-compatible, and tha
 
 - [ ] What roofing materials do you recommend for durability and snow load?  
   - [ ] Standing seam metal (preferred for solar)
-  - [ ] Synthetic/composite / IKO Dynasty Nortic Perf 
+  - [X] Synthetic/composite / IKO Dynasty Nortic Perf GRANITE BLACK
   - [ ] Other: _____________________
 
 - [ ] Is this roof type compatible with solar panel installation?
-- [ ] What is the manufacturer’s warranty on the roofing material?
+- [X] What is the manufacturer’s warranty on the roofing material? 30 yr
 - [ ] Does the warranty remain valid with solar panels installed?
 
 ---
@@ -63,7 +63,7 @@ Use this checklist to ensure your new roof is durable, solar-compatible, and tha
 ## Notes & Special Considerations
 
 - [ ] Mark Lieven $7860
-- [ ] Included: New gutters, permits, sale tax, disposial
+- [ ] Included: New gutters (black), permits, sale tax, disposial
 - [ ] __________________________________________________
 
 
