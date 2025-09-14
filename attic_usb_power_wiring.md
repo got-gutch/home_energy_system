@@ -1,5 +1,7 @@
 # Wiring Diagram: PoE Texas AC to USB-C Adapter for Shelly H&T Sensor
 
+![Switch Box Reference](20250914_100209.jpg)
+
 ## Components
 - PoE Texas In-Wall AC to USB-C Power Adapter
 - Junction box with AC wiring (Hot, Neutral, Ground)
