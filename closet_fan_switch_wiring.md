@@ -1,6 +1,6 @@
 # Wiring Diagram & Guidance: Shelly 1PM Gen3 Smart Switch for Attic Fan (Closet Switch Box)
 
-![Switch Box Reference](image1)
+![Switch Box Reference](20250914_095437.jpg)
 
 ## Components
 - Shelly 1PM Gen3 Smart Relay Switch
