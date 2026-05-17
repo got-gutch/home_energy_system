@@ -62,4 +62,46 @@ This document summarizes the current electrical system, recent upgrades, usage, 
 
 ---
 
-*Document last updated: 2025-08-11*
+## 6. 2026 Home Energy Financial Specification Update (NJ)
+
+### Scope
+
+- **Solar Array:** 9.03 kW residential PV system
+- **Battery Storage:** 2 residential batteries (Tesla Powerwall-class)
+- **Utility/Policy Context:** PSE&G service territory with NJ net metering and NJ production incentives
+
+### 2026 Market-Rate Assumptions
+
+- **Installed Solar Price (NJ, 2026 residential range):** $2.70–$3.20/W
+- **Modeled Solar Midpoint:** $2.85/W → **$25,736**
+- **Installed Battery Price (Powerwall-class):** $12,500–$15,000 each
+- **Modeled Battery Pair Cost:** **$27,000**
+- **Modeled Gross Investment (Solar + 2 Batteries):** **$52,736**
+
+### Incentives and Policy Effects
+
+- **Federal ITC:** 30% assumed on eligible solar + battery scope  
+  - **Modeled ITC Value:** **$15,821**
+  - **Modeled Net Upfront Investment:** **$36,915**
+- **Net Metering Effect (NJ):** Exported daytime solar offsets consumption at retail value through the annual cycle; annual net excess is generally compensated at a lower avoided-cost rate.
+- **NJ Production Incentive (SuSI/TREC-style modeled input):** **$85/MWh**
+
+### Annual Benefit Model
+
+- **Modeled Annual PV Generation:** ~10,850 kWh/year
+- **Modeled Energy Rate for Bill Offset:** $0.24/kWh blended
+- **Annual Solar Bill Offset:** **$2,604/year**
+- **Annual NJ Production Incentive:** **$922/year**
+- **Incremental Battery Economic Value:** **$300–$600/year** under current net metering (primary battery benefit remains backup power/resilience)
+- **Total Annual Benefit (Solar + 2 Batteries):** **$3,826–$4,126/year**
+
+### Updated Financial Result
+
+- **Total Project Investment (gross):** **$52,736**
+- **Net Investment after ITC:** **$36,915**
+- **Updated Break-Even Timeline:** **~8.9–9.7 years**
+- **Planning Note:** Keep system sizing near annual household usage to maximize retail-value credits and avoid low-value annual true-up exports.
+
+---
+
+*Document last updated: 2026-05-17*
