@@ -20,7 +20,27 @@
 - [x] Number of panels confirmed: 21
 - [ ] Panels specified (model/brand/quantity if known)
 
+## 2026 Regulatory and Incentive Framework
+
+Following the passage of the 'One Big Beautiful Bill' (OBBB) by the Trump administration, the residential solar and battery regulatory landscape has significantly changed for 2026:
+
+### Federal Regulatory Changes
+- **Expiration of Section 25D:** The 30% Residential Clean Energy Tax Credit under Section 25D has expired for homeowner-owned systems (cash or traditional loan purchases).
+- **Continuation of Section 48E:** The 48E commercial clean electricity investment tax credit remains active through 2027. This allows Third-Party Owned (TPO) models—such as solar leases or Power Purchase Agreements (PPAs)—to still claim a 30% equivalent credit at the commercial level.
+
+### Alternative Financial Recoupment Avenues
+Due to the loss of the direct homeowner credit, the most viable path to benefit from federal subsidies is through TPO models. Homeowners can enter into traditional leases, PPAs, or **prepaid leases** to indirectly recoup savings. Under these structures, the vendor claims the 48E commercial credit and passes the financial benefit down to the homeowner via lowered system costs or reduced electricity rates.
+
+### New Jersey State Incentive Stack
+While the direct federal tax credit for system ownership has lapsed, New Jersey maintains a robust state-level incentive stack that supports residential solar viability:
+- **SuSI SREC-II Program (ADI Model):** Provides a fixed, 15-year payout per MWh of clean energy produced, guaranteeing long-term production revenue.
+- **Sales Tax Exemption:** A 100% NJ State Sales Tax Exemption applies to all eligible solar and battery storage equipment hardware, immediately reducing gross system costs.
+- **Property Tax Exemption:** The added assessed property value resulting from the installation of the solar array and battery storage is completely exempt from local property taxes.
+- **1:1 Net Metering:** Strong net metering policies remain active with local utility providers like PSE&G and JCP&L, permitting monthly rollover credits for excess solar production.
+
 ## 2026 NJ Market Pricing Update (Planning Specification)
+
+*Note: The model below has been updated to reflect indirect savings (such as through a prepaid lease model) to simulate the 30% reduction that would have previously been a direct federal ITC.*
 
 - **System Size Modeled:** 9.03 kW
 - **2026 NJ Residential Solar Installed Cost:** **$2.70–$3.20/W**
@@ -28,8 +48,8 @@
 - **Two Residential Batteries (Powerwall-class):** **$12,500–$15,000 each installed**
 - **Modeled Battery Cost (2 units):** **$27,000 total**
 - **Modeled Gross Project Investment (Solar + 2 Batteries):** **$52,736**
-- **Federal ITC (30% on eligible solar + battery scope):** **-$15,821**
-- **Modeled Net Upfront Investment (after ITC):** **$36,915**
+- **TPO / Prepaid Lease Adjusted Value (Equivalent to 30% 48E Credit):** **-$15,821**
+- **Modeled Net Upfront Investment (After TPO Benefit):** **$36,915**
 
 ### Net Metering + NJ Incentive Impact (Model Inputs)
 
@@ -65,7 +85,7 @@
 - [ ] System tested
 
 ## Payments & Milestones
-- [ ] Cash sale: 10% deposit due at signing
+- [ ] TPO/Prepaid Lease: Initial milestone payments per contract terms
 
 ## Final Steps
 - [ ] Inspection scheduled
@@ -80,7 +100,7 @@
 - System size to be 9.03 kW  
 - Design includes 21 panels  
 - Approximate total cost (without roof): $28,800  
-- 2026 planning model updated for current NJ market assumptions, two-battery scope, and revised break-even window.
+- 2026 planning model updated for current NJ market assumptions, shift to TPO mechanisms for 48E credit capture, two-battery scope, and revised break-even window.
 
 ---
 
