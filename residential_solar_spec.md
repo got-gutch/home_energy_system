@@ -19,6 +19,17 @@
 - [x] System size confirmed: 9.03 kW
 - [x] Number of panels confirmed: 21
 - [ ] Panels specified (model/brand/quantity if known)
+- [x] Battery scope: 2 Residential Batteries (Powerwall-class) included
+
+### Component & Pricing Matrix
+
+| Component | Description / Quantity | Estimated Cost |
+| :--- | :--- | :--- |
+| **Solar Panels** | 21 panels (9.03 kW total) | ~$28,800 |
+| **Microinverters** | 21 x 430 Enphase units | Included in Solar Cost |
+| **Residential Batteries** | 2 x Powerwall-class units | $27,000 |
+| **Roofing Work** | Pre-solar roof repairs/replacement | Not Included |
+| **Gross Project Estimate** | Solar + 2 Batteries (without roof) | **$55,800** |
 
 ## 2026 Regulatory and Incentive Framework
 
@@ -96,10 +107,6 @@ While the direct federal tax credit for system ownership has lapsed, New Jersey 
 ---
 
 **General System Notes:**  
-- Confirmed use of Enphase microinverters  
-- System size to be 9.03 kW  
-- Design includes 21 panels  
-- Approximate total cost (without roof): $28,800  
 - 2026 planning model updated for current NJ market assumptions, shift to TPO mechanisms for 48E credit capture, two-battery scope, and revised break-even window.
 
 ---
