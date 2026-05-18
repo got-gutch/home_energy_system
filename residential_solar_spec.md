@@ -31,6 +31,27 @@
 | **Roofing Work** | Pre-solar roof repairs/replacement | Not Included |
 | **Gross Project Estimate** | Solar + 2 Batteries (without roof) | **$55,800** |
 
+### System Architecture Diagram
+
+```mermaid
+flowchart LR
+    subgraph Roof
+        SP[Solar Panels<br>21x] -->|DC| MI[Enphase Microinverters<br>21x]
+    end
+
+    subgraph Home Electrical
+        MI -->|AC| CB[Combiner Box / Gateway]
+        CB -->|AC| BGT[Backup Gateway / Transfer Switch]
+        BAT[2x Residential Batteries<br>Powerwall-class] <-->|Charge / Discharge| BGT
+        BGT -->|AC| MEP[Main Electrical Panel<br>Home Loads]
+    end
+
+    subgraph External
+        BGT <-->|Net Metering| UM[Utility Meter<br>PSE&G]
+        UM <--> GRID[Electrical Grid]
+    end
+```
+
 ## 2026 Regulatory and Incentive Framework
 
 Following the passage of the 'One Big Beautiful Bill' (OBBB) by the Trump administration, the residential solar and battery regulatory landscape has significantly changed for 2026:
