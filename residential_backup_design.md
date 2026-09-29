@@ -144,7 +144,7 @@ graph TD
 | Indoor Circuit Run | Needed; run the indoor circuit from the inlet across the basement to the main panel |
 | Transfer Switch Install and Wiring | Needed; install the 50A, 10-circuit manual transfer switch and complete all associated wiring |
 
-## 9. Remaining Equipment and Services Needed
+## 9. Remaining Equipment Needed
 
 | Item | Status / Notes |
 |---|---|
