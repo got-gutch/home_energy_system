@@ -38,9 +38,9 @@ flowchart TD
 | L05 | BASEMENT RSPT | 20A | **Yes** |
 | L06 | BASEMENT LIGHTS | 15A | **Yes** |
 | L07 | MASTER BDR LIGHTS | 15A | No |
-| L08 | VERIZON RSPT | 15A | **Yes** |
+| L08 | VERIZON RSPT | 15A | No |
 | L09 | KITCHEN LIGHTS | 15A Combination AFCI | **Yes** |
-| L10 | BASEMENT RSPT | 20A | No |
+| L10 | BASEMENT RSPT | 20A | **Yes** |
 | L11 | BATHROOM LIGHTS | 15A Combination AFCI | No |
 | L12 | Blank / Unlabeled | — | Spare |
 | L13 | Blank / Unlabeled | — | Spare |
@@ -72,8 +72,8 @@ flowchart TD
 |---|---|---|---|
 | TS-01 | L05 | BASEMENT RSPT | 20A |
 | TS-02 | L06 | BASEMENT LIGHTS | 15A |
-| TS-03 | L08 | VERIZON RSPT | 15A |
-| TS-04 | L09 | KITCHEN LIGHTS | 15A Combination AFCI |
+| TS-03 | L09 | KITCHEN LIGHTS | 15A Combination AFCI |
+| TS-04 | L10 | BASEMENT RSPT | 20A |
 | TS-05 | R01 | BATH - HALL LIGHTS | 15A |
 | TS-06 | R02 | SUMP PUMP | 20A |
 | TS-07 | R04 | FURNACE | 15A |
