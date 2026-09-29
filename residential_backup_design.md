@@ -45,7 +45,7 @@ graph TD
 | Utility Service | PSE&G 120/240V, single-phase residential service | Normal source |
 | Main Panel | Siemens 200A main panel | Located in basement |
 | Generator | Firman T07573 natural-gas generator | Backup source |
-| Generator Cord | 50A cord | Minimum 15 ft exterior run to house |
+| Generator Cord | NEMA 14-50P Male to SS2-50R STW 6/3+8/1 AWG 125/250V Twist Locking | Minimum 15 ft exterior run to house |
 | Power Inlet Box | Rear-mounted CS6375-style inlet box | Generator connection point |
 | Manual Transfer Switch | 50A, 10-circuit manual transfer switch | Mounted adjacent to main panel |
 | Backup Branch Circuits | Selected house circuits | Switched between utility and generator |
@@ -136,7 +136,25 @@ graph TD
 - Have a licensed electrician confirm code-compliant installation, interconnection, labeling, and clearances before energizing.
 - Confirm the exterior and interior cable run lengths and routing before purchase and installation.
 
-## 8. Installer Notes
+## 8. Electrician Services to Be Performed
+
+| Service | Status / Notes |
+|---|---|
+| Inlet Install | Needed; install the generator inlet box at the exterior connection point |
+| Indoor Circuit Run | Needed; run the indoor circuit from the inlet across the basement to the main panel |
+| Transfer Switch Install and Wiring | Needed; install the 50A, 10-circuit manual transfer switch and complete all associated wiring |
+
+## 9. Remaining Equipment and Services Needed
+
+| Item | Status / Notes |
+|---|---|
+| Generator Cable | Still needed; use the specified NEMA 14-50P Male to SS2-50R STW 6/3+8/1 AWG 125/250V Twist Locking cord |
+| Inlet Box | Still needed; rear-mounted inlet box for the generator connection |
+| Transfer Switch | Still needed; 50A, 10-circuit manual transfer switch |
+| Indoor Cable | Still needed; cable for the 25 ft inlet-to-panel run across the basement |
+| Indoor Conduit | Still needed; conduit for the 25 ft indoor run |
+
+## 10. Installer Notes
 
 - This document is a planning reference, not a stamped electrical drawing.
 - Final wiring should be field-verified against the actual panel directory and equipment nameplates.
