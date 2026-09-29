@@ -2,19 +2,18 @@
 
 ```mermaid
 flowchart TD
-    U[Utility Service] --> MP[Main Panel]
-    MP --> H[Non-Backup House Loads]
+    U["Utility Service"] --> MP["Main Panel"]
+    MP --> H["Non-Backup House Loads"]
 
-    OUTAGE{Primary utility power available?}
-    U --> OUTAGE
+    U --> OUTAGE{"Primary utility power available?"}
     OUTAGE -- Yes --> MP
 
-    OUTAGE -- No --> G[Firman T07573 Generator<br/>(Natural Gas)]
-    G --> C[50A Cable]
-    C --> I[VEVOR CS6375 Power Inlet Box<br/>(or similar)]
-    I --> TS[VEVOR 50A 10-Circuit Manual Transfer Switch<br/>NEMA 3R, Double-Throw, Watt Meter<br/>(or similar)]
+    OUTAGE -- No --> G["Firman T07573 Generator<br/>(Natural Gas)"]
+    G --> C["50A Cable"]
+    C --> I["VEVOR CS6375 Power Inlet Box<br/>(or similar)"]
+    I --> TS["VEVOR 50A 10-Circuit Manual Transfer Switch<br/>NEMA 3R, Double-Throw, Watt Meter<br/>(or similar)"]
     MP --> TS
-    TS --> CL[Exact Backup Set (10 Circuits)<br/>L05 Basement RSPT (20A)<br/>L06 Basement Lights (15A)<br/>L08 Verizon RSPT (15A)<br/>L09 Kitchen Lights (15A CAFCI)<br/>R01 Bath-Hall Lights (15A)<br/>R02 Sump Pump (20A)<br/>R04 Furnace (15A)<br/>R05 Basement Lights/RSPT/Fridge (15A)<br/>R11 Island (20A CAFCI)<br/>R13 Stove - Gas Ignition (20A CAFCI)]
+    TS --> CL["Exact Backup Set (10 Circuits)<br/>L05 Basement RSPT (20A)<br/>L06 Basement Lights (15A)<br/>L08 Verizon RSPT (15A)<br/>L09 Kitchen Lights (15A CAFCI)<br/>R01 Bath-Hall Lights (15A)<br/>R02 Sump Pump (20A)<br/>R04 Furnace (15A)<br/>R05 Basement Lights/RSPT/Fridge (15A)<br/>R11 Island (20A CAFCI)<br/>R13 Stove - gas ignition (20A CAFCI)"]
 ```
 
 ## Sequence
