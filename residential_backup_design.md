@@ -1,31 +1,77 @@
 # Residential Backup Power Design — 11 S Ashby Ave
 
+**Purpose:** Field reference for a licensed electrician to review, verify, and implement a manual generator backup arrangement for selected branch circuits.
+
+## 1. Component Diagram
+
 ```mermaid
-flowchart TD
-    U["Utility Service"] --> MP["Main Panel"]
-    MP --> H["Non-Backup House Loads"]
+graph TD
+    %% Define styles for distinct components
+    classDef power fill:#2d3748,stroke:#e2e8f0,stroke-width:2px,color:#f7fafc;
+    classDef switch fill:#4a5568,stroke:#fbd38d,stroke-width:2px,color:#fffaf0;
+    classDef panel fill:#22543d,stroke:#9ae6b4,stroke-width:2px,color:#f0fff4;
+    classDef circuit fill:#2b6cb0,stroke:#bee3f8,stroke-width:1.5px,color:#ebf8ff;
 
-    U --> OUTAGE{"Power Outage?"}
-    OUTAGE -- No --> MP
+    %% Power Sources
+    Utility[Utility Service]:::power
+    Gen[Generator]:::power
 
-    OUTAGE -- Yes --> G["Firman T07573 Generator<br/>(Natural Gas)"]
-    G --> C["50A Cable"]
-    C --> I["VEVOR CS6375 Power Inlet Box<br/>(or similar)"]
-    I --> TS["VEVOR 50A 10-Circuit Manual Transfer Switch<br/>NEMA 3R, Double-Throw, Watt Meter<br/>(or similar)"]
-    MP --> TS
-    TS --> MP
+    %% Transfer Mechanism
+    MTS{Manual Transfer Switch}:::switch
+
+    %% Distribution Panels
+    MainPanel[Main Panel<br/>Non-Backup Branch Circuits]:::panel
+    BackupPanel[Backup Branch Circuits]:::panel
+
+    %% Connections
+    Utility --> MainPanel
+    MainPanel -->|Utility Feed| MTS
+    Gen -->|Generator Cord -> Inlet Box| MTS
+    MTS --> BackupPanel
+
+    %% Example Critical Circuits
+    subgraph Critical Circuits
+        BackupPanel --> L1[Refrigerator / Fridge]:::circuit
+        BackupPanel --> L2[Sump Pump]:::circuit
+        BackupPanel --> L3[Furnace]:::circuit
+        BackupPanel --> L4[Selected Lights / Receptacles]:::circuit
+    end
 ```
 
-## Sequence
+## 2. Component Table
 
-1. Utility service normally powers the main panel and house loads.
-2. If primary utility power stops, deploy the Firman T07573 natural-gas generator.
-3. Connect a 50A cable from the generator to the rear power inlet box (CS6375 style).
-4. The inlet feeds the 50A, 10-circuit manual transfer switch kit (VEVOR or similar) located beside the main panel.
-5. Add/confirm the required feeder/control wiring from the transfer switch back to the main panel so each selected branch circuit can be switched between utility and generator.
-6. During outage mode, the transfer switch supplies only the selected backup circuits.
+| Logical Component | Implementation | Notes |
+|---|---|---|
+| Utility Service | PSE&G 120/240V, single-phase residential service | Normal source |
+| Main Panel | Siemens 200A main panel | Located in basement |
+| Generator | Firman T07573 natural-gas generator | Backup source |
+| Generator Cord | 50A cord | Minimum 15 ft exterior run to house |
+| Power Inlet Box | Rear-mounted CS6375-style inlet box | Generator connection point |
+| Manual Transfer Switch | 50A, 10-circuit manual transfer switch | Mounted adjacent to main panel |
+| Backup Branch Circuits | Selected house circuits | Switched between utility and generator |
+| Non-Backup Branch Circuits | Remaining house circuits | Remain on normal service |
 
-## Full Circuit Inventory with IDs
+## 3. System Arrangement
+
+- **Utility source:** PSE&G 120/240V, single-phase residential service.
+- **Main service equipment:** Siemens 200A main panel located in the basement.
+- **Backup source:** Firman T07573 natural-gas generator.
+- **Generator connection:** 50A cord to a rear-mounted power inlet box.
+- **Transfer equipment:** 50A, 10-circuit manual transfer switch mounted adjacent to the main panel.
+- **Backup load method:** Selected branch circuits are transferred between utility and generator through the manual transfer switch.
+- **Generator-to-house cable run:** The 50A cable from the generator to the house should be at least 15 ft.
+- **Indoor inlet-to-panel run:** The indoor line from the inlet across the basement to the panel will be 25 ft.
+
+## 4. Schematic Notes for Electrician Review
+
+1. Verify the inlet, cord, transfer switch, and breaker ratings are compatible with the generator output and the selected branch circuits.
+2. Confirm the transfer switch is suitable for the required circuit types, including any shared neutral, AFCI, or multi-pole considerations.
+3. Confirm whether any loads marked for backup require 120V single-pole transfer only and whether any 2-pole loads are excluded.
+4. Label the main panel directory and transfer switch positions to match the final as-built circuit assignment.
+5. Confirm grounding, bonding, mounting method, working clearances, and local code requirements before installation.
+6. Confirm the final cable routing and lengths satisfy the generator connection plan: minimum 15 ft exterior cord run and 25 ft interior inlet-to-panel run.
+
+## 5. Panel Schedule Reference
 
 ### Left Side (Top to Bottom)
 
@@ -66,9 +112,9 @@ flowchart TD
 | R13 | STOVE (gas ignition load) | 20A Combination AFCI | **Yes** |
 | R14 | BATH GFCI | 20A | No |
 
-## Exact 10-Circuit Backup Assignment (Transfer Switch)
+## 6. Final 10-Circuit Backup Assignment
 
-| Transfer Switch Position | Circuit ID | Circuit Name | Breaker |
+| Transfer Switch Pos. | Circuit ID | Circuit Name | Breaker |
 |---|---|---|---|
 | TS-01 | L05 | BASEMENT RSPT | 20A |
 | TS-02 | L06 | BASEMENT LIGHTS | 15A |
@@ -81,10 +127,17 @@ flowchart TD
 | TS-09 | R11 | ISLAND | 20A Combination AFCI |
 | TS-10 | R13 | STOVE (gas ignition load) | 20A Combination AFCI |
 
-## Validation Checklist
+## 7. Field Verification Checklist
 
-- Confirm each candidate breaker number and amperage in the Siemens main panel.
-- Verify transfer switch circuit amp limits and pole requirements (120V single-pole vs any 240V/tied loads).
-- Validate Firman T07573 available running watts against simultaneous selected loads.
-- Mark final selected circuits in the transfer switch schedule and panel directory.
-- Have a licensed electrician confirm code-compliant wiring and interconnection details before installation.
+- Confirm the exact breaker numbers, amperages, and tie requirements in the Siemens main panel.
+- Confirm the transfer switch supports the selected circuits and any required pole configuration.
+- Confirm the generator output rating is sufficient for the planned simultaneous loads.
+- Verify which circuits are actually included in the final backup set before any wiring changes are made.
+- Have a licensed electrician confirm code-compliant installation, interconnection, labeling, and clearances before energizing.
+- Confirm the exterior and interior cable run lengths and routing before purchase and installation.
+
+## 8. Installer Notes
+
+- This document is a planning reference, not a stamped electrical drawing.
+- Final wiring should be field-verified against the actual panel directory and equipment nameplates.
+- Any circuit with ambiguous labeling should be traced and renamed before final handoff.
