@@ -14,7 +14,7 @@ flowchart TD
     C --> I[VEVOR CS6375 Power Inlet Box<br/>(or similar)]
     I --> TS[VEVOR 50A 10-Circuit Manual Transfer Switch<br/>NEMA 3R, Double-Throw, Watt Meter<br/>(or similar)]
     MP --> TS
-    TS --> CL[Selected Backup Circuits]
+    TS --> CL[Exact Backup Set (10 Circuits)<br/>L05 Basement RSPT (20A)<br/>L06 Basement Lights (15A)<br/>L08 Verizon RSPT (15A)<br/>L09 Kitchen Lights (15A CAFCI)<br/>R01 Bath-Hall Lights (15A)<br/>R02 Sump Pump (20A)<br/>R04 Furnace (15A)<br/>R05 Basement Lights/RSPT/Fridge (15A)<br/>R11 Island (20A CAFCI)<br/>R13 Stove - Gas Ignition (20A CAFCI)]
 ```
 
 ## Sequence
@@ -26,25 +26,63 @@ flowchart TD
 5. Add/confirm the required feeder/control wiring from the transfer switch back to the main panel so each selected branch circuit can be switched between utility and generator.
 6. During outage mode, the transfer switch supplies only the selected backup circuits.
 
-## Proposed Backup Circuit Set (to Confirm at Panel)
+## Full Circuit Inventory with IDs
 
-Prioritize existing must-run loads from `/home/runner/work/home_energy_system/home_energy_system/electrical_information.md`:
+### Left Side (Top to Bottom)
 
-1. Refrigerator circuit
-2. Home networking circuit (modem/router/switch)
-3. Gas furnace blower/controls circuit
-4. Air-conditioner critical control/air-handler circuit (if compatible with transfer switch and generator capacity)
+| ID | Circuit | Breaker | Backup |
+|---|---|---|---|
+| L01 | A/C UNIT | 30A (2-pole, part 1) | No |
+| L02 | A/C UNIT (continuation) | 30A (2-pole, part 2) | No |
+| L03 | LAUNDRY LIGHT | 15A | No |
+| L04 | WASHER / DRYER | 20A | No |
+| L05 | BASEMENT RSPT | 20A | **Yes** |
+| L06 | BASEMENT LIGHTS | 15A | **Yes** |
+| L07 | MASTER BDR LIGHTS | 15A | No |
+| L08 | VERIZON RSPT | 15A | **Yes** |
+| L09 | KITCHEN LIGHTS | 15A Combination AFCI | **Yes** |
+| L10 | BASEMENT RSPT | 20A | No |
+| L11 | BATHROOM LIGHTS | 15A Combination AFCI | No |
+| L12 | Blank / Unlabeled | — | Spare |
+| L13 | Blank / Unlabeled | — | Spare |
+| L14 | Blank / Unlabeled | — | Spare |
+| L15 | Blank / Unlabeled | — | Spare |
 
-Then fill remaining transfer-switch positions with high-value essentials, such as:
+### Right Side (Top to Bottom)
 
-5. Kitchen small-appliance circuit (minimum one)
-6. Basement/utility lighting circuit
-7. Sump pump circuit (if present)
-8. Boiler/ignition or hydronic controls (if separate from furnace controls)
-9. Essential receptacles circuit (office/charging/medical devices)
-10. Safety/security circuit (garage door opener / alarm / exterior lighting as needed)
+| ID | Circuit | Breaker | Backup |
+|---|---|---|---|
+| R01 | BATH - HALL LIGHTS | 15A | **Yes** |
+| R02 | SUMP PUMP | 20A | **Yes** |
+| R03 | BEDROOM RSPT | 20A | No |
+| R04 | FURNACE | 15A | **Yes** |
+| R05 | BASEMENT LIGHTS / RSPT / FRIDGE | 15A | **Yes** |
+| R06 | KITCHEN COUNTER | 20A Combination AFCI | No |
+| R07 | GARBAGE DISPOSAL | 20A Combination AFCI | No |
+| R08 | MICROWAVE | 20A Combination AFCI | No |
+| R09 | KITCHEN COUNTER | 20A Combination AFCI | No |
+| R10 | PANTRY RSPT | 20A Combination AFCI | No |
+| R11 | ISLAND | 20A Combination AFCI | **Yes** |
+| R12 | DISHWASH | 20A Combination AFCI | No |
+| R13 | STOVE (gas ignition load) | 20A Combination AFCI | **Yes** |
+| R14 | BATH GFCI | 20A | No |
 
-## Circuit Identification and Validation Checklist
+## Exact 10-Circuit Backup Assignment (Transfer Switch)
+
+| Transfer Switch Position | Circuit ID | Circuit Name | Breaker |
+|---|---|---|---|
+| TS-01 | L05 | BASEMENT RSPT | 20A |
+| TS-02 | L06 | BASEMENT LIGHTS | 15A |
+| TS-03 | L08 | VERIZON RSPT | 15A |
+| TS-04 | L09 | KITCHEN LIGHTS | 15A Combination AFCI |
+| TS-05 | R01 | BATH - HALL LIGHTS | 15A |
+| TS-06 | R02 | SUMP PUMP | 20A |
+| TS-07 | R04 | FURNACE | 15A |
+| TS-08 | R05 | BASEMENT LIGHTS / RSPT / FRIDGE | 15A |
+| TS-09 | R11 | ISLAND | 20A Combination AFCI |
+| TS-10 | R13 | STOVE (gas ignition load) | 20A Combination AFCI |
+
+## Validation Checklist
 
 - Confirm each candidate breaker number and amperage in the Siemens main panel.
 - Verify transfer switch circuit amp limits and pole requirements (120V single-pole vs any 240V/tied loads).
