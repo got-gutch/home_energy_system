@@ -45,7 +45,7 @@ graph TD
 | Utility Service | PSE&G 120/240V, single-phase residential service | Normal source |
 | Main Panel | Siemens 200A main panel | Located in basement |
 | Generator | Firman T07573 natural-gas generator | Backup source |
-| Generator Cord | NEMA 14-50P Male to SS2-50R STW 6/3+8/1 AWG 125/250V Twist Locking | Minimum 15 ft exterior run to house |
+| Generator Cord | NEMA 14-50P Male to SS2-50R STW 6/3+8/1 AWG 125/250V Twist Locking | Minimum 20 ft exterior run to house |
 | Power Inlet Box | Rear-mounted CS6375-style inlet box | Generator connection point |
 | Manual Transfer Switch | 50A, 10-circuit manual transfer switch | Mounted adjacent to main panel |
 | Backup Branch Circuits | Selected house circuits | Switched between utility and generator |
@@ -69,7 +69,7 @@ graph TD
 3. Confirm whether any loads marked for backup require 120V single-pole transfer only and whether any 2-pole loads are excluded.
 4. Label the main panel directory and transfer switch positions to match the final as-built circuit assignment.
 5. Confirm grounding, bonding, mounting method, working clearances, and local code requirements before installation.
-6. Confirm the final cable routing and lengths satisfy the generator connection plan: minimum 15 ft exterior cord run and 25 ft interior inlet-to-panel run.
+6. Confirm the final cable routing and lengths satisfy the generator connection plan: minimum 20 ft exterior cord run and 25 ft interior inlet-to-panel run.
 
 ## 5. Panel Schedule Reference
 
